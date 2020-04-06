@@ -13,65 +13,50 @@ class Invoice extends Component {
     render() {
         return (
             <Container>
-                <Form.Row>
-                    <FormTextField
-                        as={Col}
-                        controlId="validationFormik01"
-                        label="Invoice Amount"
-                        type="text"
-                        name="amount-major"
-                    />
-                </Form.Row>
-                <Form.Row>
-                    <FormTextField
-                        as={Col}
-                        controlId="validationFormik02"
-                        label="Invoice Currency"
-                        type="text"
-                        name="currency"
-                    />
-                </Form.Row>
-                <Form.Row>
-                    <FormTextField
-                        as={Col}
-                        controlId="validationFormik02"
-                        label="Invoice Number/ Booking Reference"
-                        type="text"
-                        name="invoiceNumber"
-                    />
-                </Form.Row>
 
-                <Form.Row>
-                    <FormTextField
-                        as={Col}
-                        controlId="validationFormik02"
-                        label="elink Validity"
-                        type="text"
-                        name="elinkValidity"
-                    />
-                </Form.Row>
+                <FormTextField
+                    as={Row}
+                    controlId="validationFormik01"
+                    label="Invoice Amount"
+                    type="text"
+                    name="amount-major"
+                />
+                <FormTextField
+                    as={Row}
+                    controlId="validationFormik02"
+                    label="Invoice Currency"
+                    type="text"
+                    name="currency"
+                />
+                <FormTextField
+                    as={Row}
+                    controlId="validationFormik02"
+                    label="Invoice Number/ Booking Reference"
+                    type="text"
+                    name="invoiceNumber"
+                />
 
-                <Form.Row>
-                    <FormTextField
-                        as={Col}
-                        controlId="validationFormik02"
-                        label="Booking/Purchase Description"
-                        type="text"
-                        name="description"
-                    />
-                </Form.Row>
-
-
-                
-                <Form.Row>
-                    <FormTextField
-                        as={Col}
-                        controlId="validationFormik02"
-                        label="Language"
-                        type="text"
-                        name="language"
-                    />
-                </Form.Row>
+                <FormTextField
+                    as={Row}
+                    controlId="validationFormik02"
+                    label="elink Validity"
+                    type="text"
+                    name="elinkValidity"
+                />
+                <FormTextField
+                    as={Row}
+                    controlId="validationFormik02"
+                    label="Booking/Purchase Description"
+                    type="text"
+                    name="description"
+                />
+                <FormTextField
+                    as={Row}
+                    controlId="validationFormik02"
+                    label="Language"
+                    type="text"
+                    name="language"
+                />
             </Container>
         );
     }

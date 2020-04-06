@@ -13,34 +13,29 @@ class LinkUser extends Component {
     render() {
         return (
             <Container>
-                <Form.Row>
-                    <Form.Group as={Col} controlId="formGridState">
-                        <Form.Label>Salutation</Form.Label>
-                        <Form.Control as="select" value="Choose...">
-                            <option>Mr.</option>
-                            <option>Mrs.</option>
-                            <option>Ms.</option>
-                        </Form.Control>
-                    </Form.Group>
-                </Form.Row>
-                <Form.Row>
-                    <FormTextField
-                        as={Col}
-                        controlId="validationFormik01"
-                        label="First name"
-                        type="text"
-                        name="firstName"
-                    />
-                </Form.Row>
-                <Form.Row>
-                    <FormTextField
-                        as={Col}
-                        controlId="validationFormik02"
-                        label="Last name"
-                        type="text"
-                        name="lastName"
-                    />
-                </Form.Row>
+                <Form.Group as={Row} controlId="formGridState">
+                    <Form.Label>Salutation</Form.Label>
+                    <Form.Control as="select" value="Choose...">
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Ms.</option>
+                    </Form.Control>
+                </Form.Group>
+
+                <FormTextField
+                    as={Row}
+                    controlId="validationFormik01"
+                    label="First name"
+                    type="text"
+                    name="firstName"
+                />
+                <FormTextField
+                    as={Row}
+                    controlId="validationFormik02"
+                    label="Last name"
+                    type="text"
+                    name="lastName"
+                />
 
             </Container>
         );
