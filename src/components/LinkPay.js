@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { Field, Formik, Form } from 'formik';
 import LinkUser from './LinkUser';
-import { Col } from 'react-bootstrap';
+import Invoice from './Invoice';
+import { Col, Row } from 'react-bootstrap';
 
 class LinkPay extends Component {
 
   render() {
     return (
       <div>
-
         <Formik
           initialValues={{ email: '', password: '' }}
           validate={values => {
@@ -41,10 +41,12 @@ class LinkPay extends Component {
             /* and other goodies */
           }) => (
               <Form noValidate onSubmit={handleSubmit}>
-                <Col>
+                <Row>
                   <LinkUser />
-                </Col>
-
+                </Row>
+                <Row>
+                  <Invoice />
+                </Row>
               </Form>
             )}
         </Formik>

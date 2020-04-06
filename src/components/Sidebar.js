@@ -8,7 +8,7 @@ class Sidebar extends Component {
         <div className="sidebar-wrapper">
           <div className="logo">
             <Link to='/' className="simple-text">
-              Simple Dashboard
+              Offline Pay
             </Link>
           </div>
           <ul className="nav">
@@ -26,7 +26,7 @@ class Sidebar extends Component {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to='/link'>
-                <i className="nc-icon nc-circle-09"></i>
+                <i className="nc-icon nc-money-coins"></i>
                 <p>LinkPay</p>
               </NavLink>
             </li>
