@@ -30,6 +30,18 @@ class Sidebar extends Component {
                 <p>LinkPay</p>
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to='/pageeditor'>
+                <i className="nc-icon nc-money-coins"></i>
+                <p>PageEditor</p>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to='/emaileditor'>
+                <i className="nc-icon nc-email-85"></i>
+                <p>EmailEditor</p>
+              </NavLink>
+            </li>
 
           </ul>
         </div>

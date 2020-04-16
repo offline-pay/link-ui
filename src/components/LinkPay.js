@@ -3,26 +3,26 @@ import { NavLink, Link } from 'react-router-dom'
 import { Field, Formik, Form } from 'formik';
 import LinkUser from './LinkUser';
 import Invoice from './Invoice';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Row, Button, Container } from 'react-bootstrap';
 import * as Yup from 'yup';
 
 class LinkPay extends Component {
 
-  
 
-  
+
+
   render() {
     const schema = Yup.object().shape({
       firstName: Yup.string().required(),
       lastName: Yup.string().required()
 
     });
-  
+
     return (
       <div>
         <Formik
           validationSchema={schema}
-          initialValues={{ email: '', password: '',  firstName: 'John', lastName: 'Doe' }}
+          initialValues={{ email: '', password: '', firstName: 'John', lastName: 'Doe' }}
           validate={values => {
             const errors = {};
             if (!values.email) {
@@ -59,6 +59,13 @@ class LinkPay extends Component {
                 <Row>
                   <Invoice />
                 </Row>
+                <Row>
+                  <Container>
+
+                    <Button as="input" type="submit" value="Create Link" />
+                  </Container>
+                </Row>
+
               </Form>
             )}
         </Formik>
