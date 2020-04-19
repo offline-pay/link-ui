@@ -7,6 +7,7 @@ import UserProfile from './UserProfile'
 import LinkPay from './LinkPay'
 import PageEditor from './PageEditor'
 import EmailBodyEditor from './EmailBodyEditor'
+import {Merchants} from "../merchant";
 
 class Main extends Component {
   render() {
@@ -19,6 +20,8 @@ class Main extends Component {
           <Route path="/profile" component={UserProfile} />
           <Route path="/pageeditor" component={PageEditor} />
           <Route path="/emaileditor" component={EmailBodyEditor} />
+          <Route path="/merchants" component={Merchants} />
+
           <Redirect from='*' to='/dashboard' />
         </Switch>
         <Footer />
